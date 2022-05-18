@@ -65,7 +65,7 @@
     navigator.geolocation.watchPosition((data) => {
       console.log(data);
       speed.textContent = Math.round(data.coords.speed);
-      arrow.style.transform = `rotate(${data.coords.heading}20deg)`
+      arrow.style.transform = `rotate(${data.coords.heading}deg)`
     }, (err) => {
       console.err(err);
       alert('TURN IT ON')
